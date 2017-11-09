@@ -4,7 +4,7 @@ import argparse
 import dbus
 
 
-class Client:
+class GnomeShellTestRunner:
 
     def __init__(self):
         bus = dbus.SessionBus()
@@ -22,4 +22,5 @@ if __name__ == '__main__':
     PARSER.add_argument('--output_file', default='',
                         help='File path to store the results')
     ARGS = PARSER.parse_args()
-    Client().run(ARGS.tests, ARGS.output_file)
+    GnomeShellTestRunner().run(ARGS.tests, ARGS.output_file)
+
