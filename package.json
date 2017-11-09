@@ -1,0 +1,23 @@
+{
+  "name": "gnome-shell-tests",
+  "author": "Heber Parrucci <heber.parrucci@canonical.com>",
+  "version": "0.0.1",
+  "keywords": [
+    "gnome-shell-tests"
+  ],
+  "description": "Run gnome-shell tests through D-Bus",
+  "main": "testHelperService.js",
+  "maintainers": [
+    {
+      "name": "Heber Parrucci",
+      "email": "heber.parrucci@canonical.com"
+    }
+  ],
+  "dependencies": {
+    "node-cmd": "^3.0.0",
+    "dbus-native": "^0.1.2",
+  },
+  "engine": {
+    "node": ">=4.0"
+  }
+}
